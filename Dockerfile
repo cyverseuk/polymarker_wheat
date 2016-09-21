@@ -5,7 +5,7 @@ ARG DEBIAN_FRONTEND=noninteractive
 ADD http://ftp.gramene.org/archives/PAST_RELEASES/release44/data/fasta/triticum_aestivum/dna/Triticum_aestivum.IWGSC2.25.dna.genome.fa.gz /data/
 
 RUN     gunzip /data/Triticum_aestivum.IWGSC2.25.dna.genome.fa.gz && \
-        chmod 777 /data/Triticum_aestivum.IWGSC2.25.dna.genome.fa
+        chmod 777 /data /data/Triticum_aestivum.IWGSC2.25.dna.genome.fa
       
 WORKDIR /data/
 
